@@ -1,0 +1,277 @@
+<html>
+
+
+<body>
+<body>
+press space
+<div id="wrapper"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+
+<div id="0">
+<img id="dog0" src="book.jpg" alt="" width="300" height="400">
+<img id="dog1" src="book2.jpg" alt="" width="300" height="400">
+<img id="dog2" src="book3.jpg" alt="" width="300" height="400">
+<img id="dog3" src="book4.jpg" alt="" width="300" height="400">
+<img id="dog4" src="book5.jpg" alt="" width="300" height="400">
+</div>
+<div id="1">
+<img id="cat0" src="cat1.png" alt="" width="300" height="400" style="display:none">
+<img id="cat1" src="cat2.jpg" alt="" width="300" height="400"style="display:none">
+<img id="cat2" src="cat3.jpg" alt="" width="300" height="400"style="display:none">
+<img id="cat3" src="car4.jpg" alt="" width="300" height="400"style="display:none">
+<img id="cat4" src="cat6.jpg" alt="" width="300" height="400"style="display:none">
+</div>
+<div id="2">
+<img id="hh0" src="hh1.jpg" alt="" width="300" height="400" style="display:none">
+<img id="hh1" src="hh2.jpg" alt="" width="300" height="400"style="display:none">
+<img id="hh2" src="hh3.jpg" alt="" width="300" height="400"style="display:none">
+<img id="hh3" src="hh4.jpg" alt="" width="300" height="400"style="display:none">
+<img id="hh4" src="hh5.jpg" alt="" width="300" height="400"style="display:none">
+</div>
+<div id="2">
+<img id="pg0" src="pingu1.jpg" alt="" width="300" height="400" style="display:none">
+<img id="pg1" src="pingu2.jpg" alt="" width="300" height="400"style="display:none">
+<img id="pg2" src="pingu3.jpg" alt="" width="300" height="400"style="display:none">
+<img id="pg3" src="pingu4.jpg" alt="" width="300" height="400"style="display:none">
+<img id="pg4" src="pingu5.jpg" alt="" width="300" height="400"style="display:none">
+</div>
+
+<script>
+/*$('body').keyup(function(e){
+if(e.keyCode == 32){
+  $( "#book" ).show( "slow", function() {
+    }
+  });
+  
+});
+*/
+
+
+index = 0;
+
+
+function show_dogs(){
+	$("#dog0").show("slow");
+	$("#dog1").show("slow");
+	$("#dog2").show("slow");
+	$("#dog3").show("slow");
+	$("#dog4").show("slow");
+}
+function show_cats(){
+	$("#cat0").show("slow");
+	$("#cat1").show("slow");
+	$("#cat2").show("slow");
+	$("#cat3").show("slow");
+	$("#cat4").show("slow");
+}
+function show_hedgehogs(){
+	$("#hh0").show("slow");
+	$("#hh1").show("slow");
+	$("#hh2").show("slow");
+	$("#hh3").show("slow");
+	$("#hh4").show("slow");
+}
+function show_penguins(){
+	$("#pg0").show("slow");
+	$("#pg1").show("slow");
+	$("#pg2").show("slow");
+	$("#pg3").show("slow");
+	$("#pg4").show("slow");
+}
+function unshow_dogs(){
+	$("#dog0").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#dog1").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#dog2").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#dog3").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#dog4").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+}
+function unshow_cats(){
+	$("#cat0").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#cat1").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#cat2").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#cat3").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#cat4").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+}
+function unshow_hedgehogs(){
+	$("#hh0").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#hh1").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#hh2").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#hh3").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#hh4").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+}
+
+function unshow_penguins(){
+	$("#pg0").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#pg1").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#pg2").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#pg3").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+  $("#pg4").animate({
+    opacity: 0, // animate slideUp
+    marginLeft: '-200px'
+  }, 'slow', 'linear', function() {
+    $(this).remove();
+  });
+}
+
+
+
+
+function show_divs(){
+	if(index == 0){
+	console.log("aici");
+		unshow_dogs();
+		show_cats();
+	}
+	else if(index == 1){
+		unshow_cats();
+		show_hedgehogs();
+	}
+	else if(index == 2){
+		unshow_hedgehogs();
+		show_penguins();
+	}
+	else if(index == 3){
+		unshow_penguins();
+		show_dogs();
+		
+	}
+	
+	index++;
+	index = index % 4;
+	console.log(index);
+}
+
+
+
+$(function() {
+  $(document).keyup(function(evt) {
+    if (evt.keyCode == 32) {
+      space = false;
+    }
+  }).keydown(function(evt) {
+    if (evt.keyCode == 32) {
+      space = true; 
+	  console.log("dawd");
+	  
+      show_divs();
+    }
+  });
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+
+<body>
+</html>
