@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>UploadPictureController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.UploadPictureController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadPictureController</servlet-name>
+        <url-pattern>/UploadPictureController</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.LoginController</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>
