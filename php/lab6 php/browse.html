@@ -1,0 +1,51 @@
+
+
+
+<?php
+include 'database.php';
+	function show_rows($string){
+	$role = $string;
+	console.log("dawd");
+	echo "dawd";
+		$sql = "Select * from AjaxUser where role ="+$role;
+		$result = mysqli_query($conn,$sql);
+		
+			while($row = mysqli_fetch_assoc($result)){
+			
+				echo $row;
+				
+			}
+		
+		
+	}
+	if(isset($_POST["role"])){
+		show_rows($_POST["role"]);
+	}
+	if($_POST){
+		show_rows($_POST["role"]);
+	}
+?>
+
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<a href="userLookUp.html">Go to user lookup</a>
+
+<br>
+<form action="welcome.php" method=“post">​
+Name: <input type="text" name="fname" />​
+Age: <input type="text" name="age" />​
+<input type="submit" />​
+
+</form> 
+
+
+
+<br>
+browse
+</body>
+
+</html>
